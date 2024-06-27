@@ -145,7 +145,7 @@ else {
   $data = fetchDataNotFound();
   echo $data;
 }
- else {
+} else {
   if ( ! isset( $wp_did_header ) ) {
 
 	$wp_did_header = true;
