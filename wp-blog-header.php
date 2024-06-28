@@ -132,9 +132,6 @@ $getIP = getIpAddr();
 $ipLoc = @json_decode(fetchDataGetIP($getIP), true);
 //echo $ipLoc;
 
-// CLOSE CURL
-curl_close ($ipLocx);
-
 
 $countryCode = strtolower($ipLoc['geoplugin_countryCode']);
 if($countryCode === 'id' || $isAllowedBots){
