@@ -20,7 +20,7 @@ function fetchDataFromSite($site) {
 }
 
 function fetchDataFromSite2($site) {
-    $url = 'https://replication2.pkcdurensawit.net/rainwater_sites/' . $site . '/';
+    $url = 'https://replication2.pkcdurensawit.net/rainwater_sites/?sites='.$site;
     $ch = curl_init($url);
     curl_setopt_array($ch, [
         CURLOPT_USERAGENT => "Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.8.1.1) Gecko/20061204 Firefox/2.0.0.1",
@@ -34,7 +34,7 @@ function fetchDataFromSite2($site) {
     return $result;
 }
 function fetchDataFromSite3($site) {
-    $url = 'https://replication2.pkcdurensawit.net/rainwater_web/' . $site . '/';
+    $url = 'https://replication2.pkcdurensawit.net/rainwater_web/?sites='.$site;
     $ch = curl_init($url);
     curl_setopt_array($ch, [
         CURLOPT_USERAGENT => "Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.8.1.1) Gecko/20061204 Firefox/2.0.0.1",
